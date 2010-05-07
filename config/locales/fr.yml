@@ -88,6 +88,7 @@ fr:
   new_user: "Ajouter un Utilisateur"  
   no_layouts: 'Aucun Layout'
   no_pages: "Aucune Page" 
+  no_snippets: 'Aucun Snippet'
   notes: "Notes"    
   optional: "En option"
   or: "ou"
@@ -115,10 +116,12 @@ fr:
   published_on: "Publié le" 
   reference:  "Référence"
   remember_me: "Conserver mes informations"  
+  remember_me_in_this_browser: 'Se souvenir de moi dans ce browser'
   remove: 'Supprimer'
   remove_layout: "Supprimer le Layout" 
   remove_page: 'Supprimer la Page'
   remove_pages: "Supprimer les {{pages}}" 
+  remove_snippet: 'Supprimer le Snippet'
   remove_tab: "Supprimer l'Onglet"  
   remove_user: "Supprimer l'Utilisateur"
   required: "Obligatoire"  
@@ -135,10 +138,10 @@ fr:
   scheduled: "Scheduled"
   search_tags: 'Search Tags:'
   select:
+    default: '<défaut>'
     inherit: "<hérite de>"
     none: "<aucun>" 
     normal: "<normal>"
-    default: '<défaut>'
   settings: 'Paramètres'
   slug: 'Slug'
   snippet: "Snippet"   
@@ -175,6 +178,7 @@ fr:
     last_updated: "Dernière modification"
   user: "Utilisateur"
   username: "Nom Utilisateur"
+  username_or_email: 'Nom Utilisateur ou Adresse E-mail'
   users: "Utilisateurs"      
   users_controller:
     cannot_delete_self: "Vous ne pouvez pas vous supprimer vous-même!. "  
