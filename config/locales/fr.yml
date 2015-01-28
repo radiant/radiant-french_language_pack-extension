@@ -7,6 +7,8 @@ fr:
         blank: 'obligatoire' # required
         invalid: 'invalid format' #invalid_format
         not_a_number: 'doit &ecirc;tre un nombre' # must be number
+        not_a_page: "il doit exister une page a cette adresse" # there must be a page at this address
+        not_permitted: 'doit &ecirc;tre une des valeurs permitt&eacute;'
         taken: 'nom d&eacute;j&agrave; utilis&eacute;' # name_in_use
         too_long: '{{count}}-caract&egrave;res maximum' # character_limit
         too_short: '{{count}}-caract&egrave;res minimum' # character_minimum
@@ -24,6 +26,7 @@ fr:
             password:
               confirmation: 'doit &ecirc;tre identique &agrave; sa confirmation' # password_confirmation
   add_child: 'Ajouter Page'
+  add_field: 'Ajouter Field'
   add_part: 'Ajouter une Partie de Page'
   add_tab: "Ajouter un Onglet"
   admin: "Administrateur" 
@@ -38,9 +41,28 @@ fr:
   cancel: "Annuler"
   change: 'Changer'
   close: "Fermer"
+  config:
+    admin:
+      title: 'admin header title'
+    defaults:
+      locale: 'langage de default'
+      page:
+        fields: "page fields"
+        filter: "page filter"
+        parts: "page parts"
+        status: "page status"
+    dev:
+      host: "dev site domain"
+    local:
+      timezone: "local timezone"
+    site:
+      title: "titre du site"
+      host: "nom de domaine du site"
+    user:
+      allow_password_reset?: "allow password reset"
   content: 'Contenu'
   content_type: "Type&#8209;Contenu"    
-  creating_status: 'Creating {{model}}&#8230;'
+  creating_status: 'En train de cr&eacute;er {{model}}&#8230;'
   date:
     abbr_day_names: [Di, Lu, Ma, Me, Je, Ve, Sa]
     abbr_month_names: [~, Jan, Fev, Mar, Avr, Mai, Jun, Jul, Aou, Sep, Oct, Nov, Dec]
@@ -54,14 +76,18 @@ fr:
     order: [:day, :month, :year]
   delete_layout: "Supprimer Layout"  
   delete_pages: "Supprimer {{pages}}"  
-  delete_snippet: 'Delete Snippet'
-  delete_user: 'Delete User'
+  delete_snippet: 'Supprimer Snippet'
+  delete_user: 'Supprimer Utilisateur'
   description: 'Description'
   design: 'Design'
   designer: 'Designer'
   draft: "Brouillon"
+  edit: 'Modifier'
+  edit_configuration: "Modifier configuration"
   edit_layout: "Modifier Layout"
-  edit_page:  "Modifier Page"   
+  edit_page:  "Modifier Page"
+  edit_preferences: "Modifier vos pr&eacute;f&eacute;rences"
+  edit_settings: 'Modifier param&egrave;tres'
   edit_snippet: "Modifier Snippet"
   edit_user: "Modifier Utilisateur"
   email_address: 'Adresse E-mail'
@@ -79,20 +105,23 @@ fr:
   login: "Login" 
   modify: "Modifier" 
   more: "Plus"
+  more_info: "Plus d'information"
   name: "Nom"
   new_homepage: "Nouvelle Page d'Accueil"
   new_layout: "Ajouter Layout"    
   new_page: "Nouvelle Page"
   new_password: 'Nouveau Mot de passe'
   new_snippet: "Ajouter un Snippet"
-  new_user: "Ajouter un Utilisateur"  
+  new_user: "Ajouter un Utilisateur"
+  'no': 'Non'
   no_layouts: 'Aucun Layout'
   no_pages: "Aucune Page" 
   no_snippets: 'Aucun Snippet'
   notes: "Notes"    
   optional: "En option"
   or: "ou"
-  page: "Page"     
+  page: "Page"
+  page_hierarchy: 'Hi&eacute;rarchie de les pages du site'
   page_page: 'Page Part'
   page_title: "Titre"  
   page_type: "Type Page"
@@ -102,7 +131,7 @@ fr:
     removed_one: "La page a &eacute;t&eacute; correctement retir&eacute;e du site."  
     saved: "Votre page enregistr&eacute;e ci-dessous."  
   password: "Mot de passe" 
-  password_confirmation: "Confirmer le Mot de passe"
+  password_confirmation: "Confirmer le mot de passe"
   personal: 'Profile'
   personal_preferences: 'Pr&eacute;f&eacute;rences du Profile'
   please_login: 'SVP Identifiez-vous'
@@ -111,6 +140,7 @@ fr:
   preferences_controller:
     error_updating: "Une erreur a &eacute;t&eacute; d&eacute;tect&eacute;e pendant la modification de vos pr&eacute;f&eacute;rences."   
     updated: "Vos pr&eacute;f&eacute;rences ont &eacute;t&eacute; modifi&eacute;es."
+  preview: 'Preview'
   published: "Publi&eacute;" 
   published_at: "Publi&eacute; le" 
   published_on: "Publi&eacute; le" 
@@ -118,6 +148,7 @@ fr:
   remember_me: "Conserver mes informations"  
   remember_me_in_this_browser: 'Se souvenir de moi dans ce browser'
   remove: 'Supprimer'
+  remove_field: 'Supprimer le field'
   remove_layout: "Supprimer le Layout" 
   remove_page: 'Supprimer la Page'
   remove_pages: "Supprimer les {{pages}}" 
@@ -157,7 +188,7 @@ fr:
     snippets:
       remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> des fragments r&eacute;utilisables (snippet) suivants?"   
     users: 
-      remove_warning: 'Are you sure you want to <strong class="warning">permanently remove</strong> the following user?'
+      remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> de l'utilisateur suivant?"
   this_file_language: "Fran&ccedil;ais" 
   time:
     am: 'AM'
@@ -176,6 +207,17 @@ fr:
     at: "&agrave;"
     by: "par"
     last_updated: "Derni&egrave;re modification"
+  type: 'Type'
+  units:
+    KB: "KB"
+    MB: "MB"
+    GB: "GB"
+    seconds: "secondes"
+    minutes: "minutes"
+    hours: "heures"
+    days: "jours"
+    weeks: "semaines"
+    months: "mois"
   user: "Utilisateur"
   username: "Nom Utilisateur"
   username_or_email: 'Nom Utilisateur ou Adresse E-mail'
@@ -184,7 +226,9 @@ fr:
     cannot_delete_self: "Vous ne pouvez pas vous supprimer vous-m&ecirc;me!. "  
   version: "Version"  
   view_site: "Afficher le site"
+  warning: 'Attention'
   website: "Website"
   welcome_controller:
     invalid_user: "Nom ou mot de passe invalide."   
-    logged_out: "Vous n'&ecirc;tes plus identifi&eacute;(e)'"  
+    logged_out: "Vous n'&ecirc;tes plus identifi&eacute;(e)'"
+  'yes': 'Oui'
