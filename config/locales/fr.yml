@@ -6,25 +6,25 @@ fr:
       messages:
         blank: 'obligatoire' # required
         invalid: 'invalid format' #invalid_format
-        not_a_number: 'doit &ecirc;tre un nombre' # must be number
+        not_a_number: 'doit être un nombre' # must be number
         not_a_page: "il doit exister une page a cette adresse" # there must be a page at this address
-        not_permitted: 'doit &ecirc;tre une des valeurs permitt&eacute;'
-        taken: 'nom d&eacute;j&agrave; utilis&eacute;' # name_in_use
-        too_long: '{{count}}-caract&egrave;res maximum' # character_limit
-        too_short: '{{count}}-caract&egrave;res minimum' # character_minimum
+        not_permitted: 'doit être une des valeurs permitté'
+        taken: 'nom déjà utilisé' # name_in_use
+        too_long: '{{count}}-caractères maximum' # character_limit
+        too_short: '{{count}}-caractères minimum' # character_minimum
       models:
         page:
           attributes:
             slug:
-              taken: "jeton (slug) d&eacute;j&agrave; utilis&eacute; pour l'enfant de ce parent" # slug_in_use
+              taken: "jeton (slug) déjà utilisé pour l'enfant de ce parent" # slug_in_use
         user:
           attributes:
             email:
               invalid: 'adresse courriel non valide' # invalid_email
             login:
-              taken: 'identification d&eacute;j&agrave; utilis&eacute;e' # login already in use
+              taken: 'identification déjà utilisée' # login already in use
             password:
-              confirmation: 'doit &ecirc;tre identique &agrave; sa confirmation' # password_confirmation
+              confirmation: 'doit être identique à sa confirmation' # password_confirmation
   add_child: 'Ajouter Page'
   add_field: 'Ajouter Field'
   add_part: 'Ajouter une Partie de Page'
@@ -35,9 +35,9 @@ fr:
   body: "Body"  
   breadcrumb: "Fil d'ariane"
   buttons:
-    create: "Cr&eacute;er {{name}}"     
+    create: "Créer {{name}}"
     save_and_continue: "Enregistrer et continuer"
-    save_changes: "Enregistrer les modifications"  
+    save_changes: "Enregistrer les modifications"
   cancel: "Annuler"
   change: 'Changer'
   close: "Fermer"
@@ -61,8 +61,8 @@ fr:
     user:
       allow_password_reset?: "allow password reset"
   content: 'Contenu'
-  content_type: "Type&#8209;Contenu"    
-  creating_status: 'En train de cr&eacute;er {{model}}&#8230;'
+  content_type: "Type‑Contenu"
+  creating_status: 'En train de créer {{model}}…'
   date:
     abbr_day_names: [Di, Lu, Ma, Me, Je, Ve, Sa]
     abbr_month_names: [~, Jan, Fev, Mar, Avr, Mai, Jun, Jul, Aou, Sep, Oct, Nov, Dec]
@@ -72,10 +72,10 @@ fr:
       long: "%e. %B %Y"
       only_day: "%e"
       short: "%e. %b"
-    month_names: [~, Janvier, F&eacute;vrier, Mars, Avril, Mai, Juin, Juillet, Ao&ucirc;t, Septembre, Octobre, Novembre, Decembre]
+    month_names: [~, Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Decembre]
     order: [:day, :month, :year]
-  delete_layout: "Supprimer Layout"  
-  delete_pages: "Supprimer {{pages}}"  
+  delete_layout: "Supprimer Layout"
+  delete_pages: "Supprimer {{pages}}"
   delete_snippet: 'Supprimer Snippet'
   delete_user: 'Supprimer Utilisateur'
   description: 'Description'
@@ -86,117 +86,117 @@ fr:
   edit_configuration: "Modifier configuration"
   edit_layout: "Modifier Layout"
   edit_page:  "Modifier Page"
-  edit_preferences: "Modifier vos pr&eacute;f&eacute;rences"
-  edit_settings: 'Modifier param&egrave;tres'
+  edit_preferences: "Modifier vos préférences"
+  edit_settings: 'Modifier paramètres'
   edit_snippet: "Modifier Snippet"
   edit_user: "Modifier Utilisateur"
   email_address: 'Adresse E-mail'
   extension: "Extension"
   extensions: "Extensions" 
   filter: "Filtre"
-  hidden: "Cach&eacute;"
-  hide: 'Masquer' 
-  keywords: 'Mots cl&eacute;s'
+  hidden: "Caché"
+  hide: 'Masquer'
+  keywords: 'Mots clés'
   language: "Langage"
-  layout: "Layout"  
+  layout: "Layout"
   layouts: "Layouts"
-  log_out: "D&eacute;connexion"
-  logged_in_as: 'Connect&eacute; en tant que'
-  login: "Login" 
-  modify: "Modifier" 
+  log_out: "Déconnexion"
+  logged_in_as: 'Connecté en tant que'
+  login: "Login"
+  modify: "Modifier"
   more: "Plus"
   more_info: "Plus d'information"
   name: "Nom"
   new_homepage: "Nouvelle Page d'Accueil"
-  new_layout: "Ajouter Layout"    
+  new_layout: "Ajouter Layout"
   new_page: "Nouvelle Page"
   new_password: 'Nouveau Mot de passe'
   new_snippet: "Ajouter un Snippet"
   new_user: "Ajouter un Utilisateur"
   'no': 'Non'
   no_layouts: 'Aucun Layout'
-  no_pages: "Aucune Page" 
+  no_pages: "Aucune Page"
   no_snippets: 'Aucun Snippet'
-  notes: "Notes"    
+  notes: "Notes"
   optional: "En option"
   or: "ou"
   page: "Page"
-  page_hierarchy: 'Hi&eacute;rarchie de les pages du site'
+  page_hierarchy: 'Hiérarchie de les pages du site'
   page_page: 'Page Part'
-  page_title: "Titre"  
+  page_title: "Titre"
   page_type: "Type Page"
   pages: "Pages"
   pages_controller:
-    removed_many: "Les pages ont &eacute;t&eacute; correctement retir&eacute;es du site."   
-    removed_one: "La page a &eacute;t&eacute; correctement retir&eacute;e du site."  
-    saved: "Votre page enregistr&eacute;e ci-dessous."  
-  password: "Mot de passe" 
+    removed_many: "Les pages ont été correctement retirées du site."
+    removed_one: "La page a été correctement retirée du site."
+    saved: "Votre page enregistrée ci-dessous."
+  password: "Mot de passe"
   password_confirmation: "Confirmer le mot de passe"
   personal: 'Profile'
-  personal_preferences: 'Pr&eacute;f&eacute;rences du Profile'
+  personal_preferences: 'Préférences du Profile'
   please_login: 'SVP Identifiez-vous'
   powered_by: 'Powered by'
-  preferences: "Pr&eacute;f&eacute;rences" 
+  preferences: "Préférences"
   preferences_controller:
-    error_updating: "Une erreur a &eacute;t&eacute; d&eacute;tect&eacute;e pendant la modification de vos pr&eacute;f&eacute;rences."   
-    updated: "Vos pr&eacute;f&eacute;rences ont &eacute;t&eacute; modifi&eacute;es."
+    error_updating: "Une erreur a été détectée pendant la modification de vos préférences."
+    updated: "Vos préférences ont été modifiées."
   preview: 'Preview'
-  published: "Publi&eacute;" 
-  published_at: "Publi&eacute; le" 
-  published_on: "Publi&eacute; le" 
-  reference:  "R&eacute;f&eacute;rence"
-  remember_me: "Conserver mes informations"  
+  published: "Publié"
+  published_at: "Publié le"
+  published_on: "Publié le"
+  reference:  "Référence"
+  remember_me: "Conserver mes informations"
   remember_me_in_this_browser: 'Se souvenir de moi dans ce browser'
   remove: 'Supprimer'
   remove_field: 'Supprimer le field'
-  remove_layout: "Supprimer le Layout" 
+  remove_layout: "Supprimer le Layout"
   remove_page: 'Supprimer la Page'
-  remove_pages: "Supprimer les {{pages}}" 
+  remove_pages: "Supprimer les {{pages}}"
   remove_snippet: 'Supprimer le Snippet'
-  remove_tab: "Supprimer l'Onglet"  
+  remove_tab: "Supprimer l'Onglet"
   remove_user: "Supprimer l'Utilisateur"
-  required: "Obligatoire"  
+  required: "Obligatoire"
   resource_controller:
     not_found: "{{humanized_model_name}} could not be found."
-    removed: "{{humanized_model_name}} supprim&eacute;."  
-    saved: "{{humanized_model_name}} enregistr&eacute; ci-dessous."
-    update_conflict: "{{humanized_model_name}} a &eacute;t&eacute; modifi&eacute; depuis son affichage. Toute modification ne pourra &ecirc;tre enregistr&eacute;e sans perte potentielle de donn&eacute;e." 
+    removed: "{{humanized_model_name}} supprimé."
+    saved: "{{humanized_model_name}} enregistré ci-dessous."
+    update_conflict: "{{humanized_model_name}} a été modifié depuis son affichage. Toute modification ne pourra être enregistrée sans perte potentielle de donnée."
     validation_errors: "Erreurs de validation pendant le traitement de ce formulaire. SVP examinez son contenu et corrigez les erreurs avant de continuer."
-  reviewed: "R&eacute;vis&eacute;"
-  roles: "Roles"    
+  reviewed: "Révisé"
+  roles: "Roles"
   saving_changes: Sauvegarde des modifications
-  saving_preferences: Sauvegarde des pr&eacute;f&eacute;rences
+  saving_preferences: Sauvegarde des préférences
   scheduled: "Scheduled"
   search_tags: 'Search Tags:'
   select:
-    default: '<d&eacute;faut>'
-    inherit: "<h&eacute;rite de>"
-    none: "<aucun>" 
+    default: '<défaut>'
+    inherit: "<hérite de>"
+    none: "<aucun>"
     normal: "<normal>"
-  settings: 'Param&egrave;tres'
+  settings: 'Paramètres'
   slug: 'Slug'
-  snippet: "Snippet"   
+  snippet: "Snippet"
   snippets: "Snippets"
   status: "Statut"
     # Warnings and info text:
   testing: Testing
   text:
     layouts:
-      remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> du layout suivant?"  
-    pages: 
-      remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> des pages suivantes {{pages}}?" 
+      remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> du layout suivant?"
+    pages:
+      remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> des pages suivantes {{pages}}?"
     snippets:
-      remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> des fragments r&eacute;utilisables (snippet) suivants?"   
-    users: 
+      remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> des fragments réutilisables (snippet) suivants?"
+    users:
       remove_warning: "Confirmez-vous la <strong class='warning'>suppression</strong> de l'utilisateur suivant?"
-  this_file_language: "Fran&ccedil;ais" 
+  this_file_language: "Français"
   time:
     am: 'AM'
     formats:
       datetime:
         formats:
           default: "%Y-%m-%dT%H:%M:%S%Z"
-      default: "%a %b %d %H:%M:%S %Z %Y"   
+      default: "%a %b %d %H:%M:%S %Z %Y"
       long: "%B %d, %Y %H:%M"
       only_second: "%S"
       short: "%d %b %H:%M"
@@ -204,9 +204,9 @@ fr:
       timestamp: "%I:%M <small>%p</small> on %B %d, %Y"
     pm: 'PM'
   timestamp:
-    at: "&agrave;"
+    at: "à"
     by: "par"
-    last_updated: "Derni&egrave;re modification"
+    last_updated: "Dernière modification"
   type: 'Type'
   units:
     KB: "KB"
@@ -221,14 +221,14 @@ fr:
   user: "Utilisateur"
   username: "Nom Utilisateur"
   username_or_email: 'Nom Utilisateur ou Adresse E-mail'
-  users: "Utilisateurs"      
+  users: "Utilisateurs"
   users_controller:
-    cannot_delete_self: "Vous ne pouvez pas vous supprimer vous-m&ecirc;me!. "  
-  version: "Version"  
+    cannot_delete_self: "Vous ne pouvez pas vous supprimer vous-même!. "
+  version: "Version"
   view_site: "Afficher le site"
   warning: 'Attention'
   website: "Website"
   welcome_controller:
-    invalid_user: "Nom ou mot de passe invalide."   
-    logged_out: "Vous n'&ecirc;tes plus identifi&eacute;(e)'"
+    invalid_user: "Nom ou mot de passe invalide."
+    logged_out: "Vous n'êtes plus identifié(e)'"
   'yes': 'Oui'
